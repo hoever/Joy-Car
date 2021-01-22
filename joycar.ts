@@ -559,7 +559,7 @@ namespace JoyCar {
     //    return out[7]
     
       
-      return bin(bin[channel])
+      return bin[channel]
       //return !(!!bin[bit]);
     }
 
