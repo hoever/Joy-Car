@@ -558,7 +558,7 @@ namespace JoyCar {
         while (bin.length < 8) bin = "0" + bin
     //    return out[7]
     
-      
+        console.log(bin)
       return !parseInt(bin[channel])
     
       //return !(!!bin[bit]);
