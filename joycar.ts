@@ -551,7 +551,7 @@ namespace JoyCar {
         let bin = ""
         let bit = 1
         while (expander > 0) {
-            bin = ((expander & bit) ? "1" : "0") + bin
+            bin = bin + ((expander & bit) ? "1" : "0")
             expander &= ~bit
             bit *= 2
         }
