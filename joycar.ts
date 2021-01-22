@@ -559,7 +559,8 @@ namespace JoyCar {
     //    return out[7]
     
       
-      return bin[channel]
+      return parseInt(bin[channel])
+    
       //return !(!!bin[bit]);
     }
 
