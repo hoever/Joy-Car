@@ -356,10 +356,10 @@ namespace JoyCar {
     //% weight=80
     export function obstacleavoidance(selection: SensorLRSelection) {
       if(selection == SensorLRSelection.Left){
-        return !sensorData(5);
+        return sensorData(5);
       }
       else {
-        return !sensorData(6);
+        return sensorData(6);
       }
     }
 
@@ -371,10 +371,10 @@ namespace JoyCar {
     //% weight=70
     export function speed(selection: SensorLRSelection) {
       if(selection == SensorLRSelection.Left){
-        return !sensorData(0);
+        return sensorData(0);
       }
       else {
-        return !sensorData(1);
+        return sensorData(1);
       }
     }
 
