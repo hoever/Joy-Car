@@ -339,13 +339,13 @@ namespace JoyCar {
     //% weight=90
     export function linefinder(selection: SensorLCRSelection) {
       if(selection == SensorLCRSelection.Left){
-        return !sensorData(2);
+        return sensorData(2);
       }
       else if(selection == SensorLCRSelection.Center){
-        return !sensorData(3);
+        return sensorData(3);
       }
       else {
-        return !sensorData(4);
+        return sensorData(4);
       }
     }
     /**
