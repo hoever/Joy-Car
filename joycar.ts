@@ -541,12 +541,6 @@ namespace JoyCar {
 
     // Read from IO Expander
     function sensorData(channel: number){
- /*     let expander = pins.i2cReadBuffer(56, 1, true);
-      let bin = [];
-      while(expander[0] > 0) {
-        bin.push(expander[0] % 2);
-        expander[0] >>= 1;               */
-        
         let expander = pins.i2cReadNumber(56, NumberFormat.UInt8LE, false);
         let bin = ""
         let bit = 1
@@ -556,12 +550,7 @@ namespace JoyCar {
             bit *= 2
         }
         while (bin.length < 8) bin = "0" + bin
-    //    return out[7]
-    
-    //    console.log(bin)
       return !parseInt(bin[channel])
-    
-      //return !(!!bin[bit]);
     }
 
     // Mapping function
